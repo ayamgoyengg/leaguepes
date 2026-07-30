@@ -584,18 +584,18 @@ let mem = null;
 
 async function load(){
   try{
-    const r = await window.storage.get(KEY);
-    if(r && r.value){ const v = JSON.parse(r.value); state = Object.assign(state, v); }
+    const txt = localStorage.getItem(KEY);
+    if(txt){ const v = JSON.parse(txt); state = Object.assign(state, v); }
   }catch(e){ /* belum ada data tersimpan */ }
 }
 let saveTimer=null;
 function save(){
   clearTimeout(saveTimer);
-  saveTimer = setTimeout(async ()=>{
+  saveTimer = setTimeout(()=>{
     const txt = JSON.stringify(state);
     mem = txt;
     try{
-      await window.storage.set(KEY, txt);
+      localStorage.setItem(KEY, txt);
       setSave(true,'Tersimpan '+new Date().toLocaleTimeString('id-ID'));
     }catch(e){
       setSave(false,'Gagal menyimpan — data hanya bertahan selama tab ini terbuka');
