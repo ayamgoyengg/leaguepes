@@ -351,9 +351,9 @@ textarea{
 
 <header>
   <div class="head-in">
-    <div class="eyebrow">Musim 2 &middot; 10 Sindikat &middot; Satu Takhta</div>
+    <div class="eyebrow">Musim 2 &middot; 11 Sindikat &middot; Satu Takhta</div>
     <h1>Mafia<br>Champions <span>League</span></h1>
-    <div class="sub">FASE GRUP TUNGGAL <b>45 laga</b> &nbsp;/&nbsp; PLAYOFF DUA BAGAN <b>12 laga</b> &nbsp;/&nbsp; SEMUA LOLOS, TAK ADA YANG AMAN</div>
+    <div class="sub">FASE GRUP TUNGGAL <b>55 laga</b> &nbsp;/&nbsp; PLAYOFF DUA BAGAN <b>13 laga</b> &nbsp;/&nbsp; SEMUA LOLOS, TAK ADA YANG AMAN</div>
     <nav id="tabs" role="tablist">
       <button role="tab" data-p="klasemen" aria-selected="true">Klasemen</button>
       <button role="tab" data-p="jadwal" aria-selected="false">Jadwal &amp; Hasil</button>
@@ -371,7 +371,7 @@ textarea{
     <div id="groupBanner"></div>
     <div class="sec">
       <h2>Klasemen Fase Grup</h2>
-      <div class="h2note">Peringkat 1–4 masuk Upper Bracket &middot; Peringkat 5–10 masuk Lower Bracket</div>
+      <div class="h2note">Peringkat 1–4 masuk Upper Bracket &middot; Peringkat 5–11 masuk Lower Bracket</div>
       <div class="tablewrap">
         <table>
           <thead><tr>
@@ -387,7 +387,7 @@ textarea{
       </div>
       <div class="legend">
         <span><i style="background:var(--brass)"></i>Upper Bracket (1–4)</span>
-        <span><i style="background:var(--muted2)"></i>Lower Bracket (5–10)</span>
+        <span><i style="background:var(--muted2)"></i>Lower Bracket (5–11)</span>
         <span>Urutan: Poin → Selisih Gol → Gol Memasukkan → Head-to-head</span>
       </div>
     </div>
@@ -397,7 +397,7 @@ textarea{
   <section class="panel" id="p-jadwal">
     <div class="sec">
       <h2>Jadwal &amp; Hasil Fase Grup</h2>
-      <div class="h2note">Setiap tim bertemu 9 lawan sekali. Isi skor, klasemen langsung menghitung ulang.</div>
+      <div class="h2note">Setiap tim bertemu 10 lawan sekali. Karena jumlah tim ganjil, satu tim libur (bye) bergiliran tiap matchday. Isi skor, klasemen langsung menghitung ulang.</div>
       <div class="toolbar">
         <button class="btn" id="fAll" data-f="all">Semua</button>
         <button class="btn" id="fTodo" data-f="todo">Belum dimainkan</button>
@@ -442,30 +442,30 @@ textarea{
       <div class="card" style="padding:20px">
         <div class="rules">
           <ol>
-            <li><b>Fase grup tunggal.</b> 10 tim, satu grup, sistem setengah kompetisi — semua saling bertemu sekali. Total <code>45</code> laga dalam 9 matchday.</li>
+            <li><b>Fase grup tunggal.</b> 11 tim, satu grup, sistem setengah kompetisi — semua saling bertemu sekali. Total <code>55</code> laga dalam 11 matchday. Karena jumlah tim ganjil, satu tim libur (bye) bergiliran tiap matchday.</li>
             <li><b>Poin.</b> Menang <code>3</code>, seri <code>1</code>, kalah <code>0</code>.</li>
             <li><b>Urutan klasemen.</b> Poin → Selisih Gol → Gol Memasukkan → Poin head-to-head → Selisih gol head-to-head → abjad.</li>
-            <li><b>Semua lolos.</b> Tidak ada yang tersingkir di fase grup. Peringkat <code>1–4</code> masuk <b>Upper Bracket</b>, peringkat <code>5–10</code> masuk <b>Lower Bracket</b>.</li>
+            <li><b>Semua lolos.</b> Tidak ada yang tersingkir di fase grup. Peringkat <code>1–4</code> masuk <b>Upper Bracket</b>, peringkat <code>5–11</code> masuk <b>Lower Bracket</b>.</li>
             <li><b>Upper Bracket.</b> Semifinal: <code>Seed 1 v Seed 4</code> dan <code>Seed 2 v Seed 3</code>. Pemenang bertemu di Final Upper. Yang kalah <b>tidak tersingkir</b> — turun ke Lower Bracket.</li>
-            <li><b>Lower Bracket.</b> Ronde 1: <code>7v10</code> dan <code>8v9</code> (seed 5 dan 6 dapat bye). Ronde 2 mempertemukan seed 5 dan 6 dengan pemenang Ronde 1. Ronde 3 kedatangan dua tim yang kalah di Semifinal Upper. Lalu Semifinal Lower, lalu Final Lower melawan tim yang kalah di Final Upper.</li>
+            <li><b>Lower Bracket.</b> Ronde 1: <code>6v11</code>, <code>7v10</code>, dan <code>8v9</code> (seed 5 dapat bye). Ronde 2 mempertemukan seed 5 dengan pemenang salah satu laga Ronde 1, sementara dua pemenang Ronde 1 lainnya saling berhadapan. Ronde 3 kedatangan dua tim yang kalah di Semifinal Upper. Lalu Semifinal Lower, lalu Final Lower melawan tim yang kalah di Final Upper.</li>
             <li><b>Grand Final.</b> Pemenang Upper melawan pemenang Lower. Satu laga, satu juara.</li>
             <li><b>Tidak ada seri di playoff.</b> Kalau skor imbang, kolom adu penalti otomatis muncul di kartu laga.</li>
-            <li><b>Kunci klasemen.</b> Setelah 45 laga grup selesai, tekan <b>Kunci seed</b> supaya urutan bagan tidak ikut bergeser kalau ada hasil grup yang direvisi.</li>
+            <li><b>Kunci klasemen.</b> Setelah 55 laga grup selesai, tekan <b>Kunci seed</b> supaya urutan bagan tidak ikut bergeser kalau ada hasil grup yang direvisi.</li>
           </ol>
         </div>
       </div>
     </div>
     <div class="sec">
       <h2>Jumlah Laga</h2>
-      <div class="h2note">Total 57 pertandingan sepanjang turnamen.</div>
+      <div class="h2note">Total 68 pertandingan sepanjang turnamen.</div>
       <div class="tablewrap">
         <table style="min-width:420px">
           <thead><tr><th class="l">Babak</th><th>Laga</th><th class="l">Peserta</th></tr></thead>
           <tbody>
-            <tr><td class="l">Fase Grup</td><td>45</td><td class="l">10 tim</td></tr>
-            <tr><td class="l">Lower Ronde 1</td><td>2</td><td class="l">Seed 7–10</td></tr>
+            <tr><td class="l">Fase Grup</td><td>55</td><td class="l">11 tim</td></tr>
+            <tr><td class="l">Lower Ronde 1</td><td>3</td><td class="l">Seed 6–11 (seed 5 bye)</td></tr>
             <tr><td class="l">Upper Semifinal</td><td>2</td><td class="l">Seed 1–4</td></tr>
-            <tr><td class="l">Lower Ronde 2</td><td>2</td><td class="l">Seed 5, 6 + pemenang R1</td></tr>
+            <tr><td class="l">Lower Ronde 2</td><td>2</td><td class="l">Seed 5 + pemenang R1</td></tr>
             <tr><td class="l">Upper Final</td><td>1</td><td class="l">Pemenang Upper SF</td></tr>
             <tr><td class="l">Lower Ronde 3</td><td>2</td><td class="l">Kalah Upper SF + pemenang R2</td></tr>
             <tr><td class="l">Lower Semifinal</td><td>1</td><td class="l">Pemenang Lower R3</td></tr>
@@ -519,7 +519,8 @@ textarea{
 const L = "https://storage.googleapis.com/tournament-uploads/teamLogo/kMgcI9XYzDQPfcyLlCzEhkW8y3z1/y4EhUwn0VyVvv18vvoUT/";
 const TEAMS = [
   {id:'ADI', name:'Aditya',  club:'FRA', logo:L+"1UVurhwQpBU9KBEfHzqp/thumb_31579ac7-ddbb-4efd-99b1-f1fde4fb18da.png?GoogleAccessId=firebase-adminsdk-8h0k0%40tournamentsoftware-a1b3d.iam.gserviceaccount.com&Expires=16447017600&Signature=CjOQ06r2uXAi0gzpnyeWmGI9T%2BA6kRGn2IA42DyTITdc7oosxszBlG47N5tzxzwSF4b7BZTUuG%2BSBkK19hi95uoWSOCOxQI2NF%2BlRxBCqePb4CkCmkQHMUDSXg4DgqV0Vg62QVls8eqnm3AmiKMySlVqXgMfgrSVs36VAqhjnegl6cSx4xnMohm7GkHXB8TAD5Fe1cJaP8K8Y6hTu2ZASLpr2%2F9IJEFjz6QOcb2E4Pwkd%2F%2BjGoSuE8OFNMamhbLA005BIQDrbozGD9oIvlH%2FkvtxGz1%2B76Gazy%2FM%2BKqpwgvPBGYatd9Hdpi59RdNjs%2B63u4TQ5cYSt0V7wjv0KkI8w%3D%3D"},
-  {id:'ARO', name:'Aron',    club:'',    logo:''},
+  {id:'ARO', name:'Aron',    club:'NOR', logo:'assets/aron.jpg'},
+  {id:'CAR', name:'Carlo',  club:'ARS', logo:'assets/carlo.png'},
   {id:'FEL', name:'Felix J', club:'PSG', logo:L+"ph44BUF8oj0Q3NG49Cfy/thumb_b620bbc8-ab36-4714-9e0b-2f1e77ab2af1.png?GoogleAccessId=firebase-adminsdk-8h0k0%40tournamentsoftware-a1b3d.iam.gserviceaccount.com&Expires=16447017600&Signature=sMyF3%2F0Pe9N1bQVVTnepTuCaYGqHSxuKUiSvqnScS1GMd3bZ5cROPgXoxZTkx09%2FDiOjjnCKSshnqb2ppgQyPs0B3yuup1Rk%2BvynQ%2FhJuQHQPhBZYF3e1M6rhcdmItOl4dYBYTajj4J4QowRZSLHFWEou1FKP1Ldac3x6p3lY9cBx%2FMQAxHs%2BZZGM5%2FD0QCGyHhL3FdbP1OhflWVmuNCq16B5tq0uJlen5ot9DrSeUNinvkkUohTewGUkGSMzUNdyTqoC87uGNc5c0wOkgmaemRdOOeux5M2OpljbFCpRMb703j61ifrp5bYvVOu0bwUFm2VP74cnBh4Ks8A7HS1cw%3D%3D"},
   {id:'FIO', name:'Fio',     club:'BAR', logo:L+"cXn9qWHEaVjDu35wjFa7/thumb_b2939558-f424-42e7-9fb7-01d50ef095f8.png?GoogleAccessId=firebase-adminsdk-8h0k0%40tournamentsoftware-a1b3d.iam.gserviceaccount.com&Expires=16447017600&Signature=iOb%2BZ8co6jcXaP6hj0e7jLVMPtdn9wGDkxDkb0bRmfiKsQ%2BBsfCLl1wLh12Hu9dmz2ipCy3s6CqoRB0eV8Ai5yEDbxyLgNs%2FXMOuiUA%2BWvysQxJgSXFhg9mM8it1fAVfqP4SRknS1RSeMtgztRKPqjCLtA6WtWv2J0%2FQ0YkW3ML55QrC3cE6MluXkLxgXebhlDgRXbNx7HEUlFYwF73Lyc7ggqWAnzp7OrsV3h2DikhmpKN72OF7J2cj6hzHqwN%2BdVnEd3Za0Nmf9Sy7enFnSbCCjL%2Boa8IePLgreaviZiC7kfhIUQBTKSfUwix7cZmHdVdkbpvpGWJrFHYQatSgEw%3D%3D"},
   {id:'GAR', name:'Garvin',  club:'BAR', logo:L+"xRCvSAaN4cCWyxChpP7o/thumb_22ca98c6-ada9-4961-a780-110ec90be041.png?GoogleAccessId=firebase-adminsdk-8h0k0%40tournamentsoftware-a1b3d.iam.gserviceaccount.com&Expires=16447017600&Signature=iEENqf%2B41tAK2l3oIYUHa5BJcdTftGwdu63mnFumHlBxaxOCcB%2BwbQf9KFqsDtPzBs5ch%2FjanHVNir4vyab5IYnEZmc8C4IzGWkvLm%2FCcTqJ%2FaXO8AZKZHdTFERtXWI2EPi3I0lTv61yyw3udvUoKH2iSWgUROByDrg%2F2YUtHItIeA8aoDuPp6lO1%2BAv0cFIfZa0Zp89yYd45xl7Wsdlj3%2BovFl7fHiYyL4jdeqX%2B5n4jUYlcn8Dtng5k3jlaLjadkBJSLWLjKevuzCcvzjWLmQYgrQLNca8nqItwFRZDYNp%2FjnoyDy33zkYuUib9B4x4%2BK%2FCqNmNZ4jqjVoFwITsA%3D%3D"},
@@ -532,24 +533,29 @@ const TEAMS = [
 const T = Object.fromEntries(TEAMS.map(t=>[t.id,t]));
 
 /* ══════════════════════════════════════════════════
-   JADWAL GRUP (metode lingkaran, 9 matchday x 5 laga)
+   JADWAL GRUP (metode lingkaran, 11 matchday x 5 laga, 1 tim bye/matchday)
 ══════════════════════════════════════════════════ */
 function buildFixtures(){
   const ids = TEAMS.map(t=>t.id);
-  const n = ids.length, arr = ids.slice(), out = [];
+  const arr = ids.slice();
+  if(arr.length%2===1) arr.push(null); // ganjil -> satu slot bye tiap ronde
+  const n = arr.length, out = [], byes = {};
   for(let r=0;r<n-1;r++){
     const md=[];
     for(let i=0;i<n/2;i++){
       let h=arr[i], a=arr[n-1-i];
       if(r%2===1){const t=h;h=a;a=t;}
-      md.push({id:`G${r+1}-${i+1}`, md:r+1, h, a});
+      if(h===null||a===null){ byes[r+1] = h===null?a:h; continue; }
+      md.push({id:`G${r+1}-${md.length+1}`, md:r+1, h, a});
     }
     out.push(md);
     arr.splice(1,0,arr.pop());
   }
+  out.byes = byes;
   return out;
 }
 const MATCHDAYS = buildFixtures();
+const BYES = MATCHDAYS.byes;
 const GROUP_MATCHES = MATCHDAYS.flat();
 
 /* ══════════════════════════════════════════════════
@@ -562,10 +568,11 @@ const KO = [
   {id:'UB-SF2', col:1, band:'up',  name:'Upper Semifinal 2', a:{seed:2}, b:{seed:3}},
   {id:'UB-F',   col:2, band:'up',  name:'Upper Final',       a:{win:'UB-SF1'}, b:{win:'UB-SF2'}},
   // Lower
-  {id:'LB-R1A', col:0, band:'low', name:'Lower R1 · A', a:{seed:7}, b:{seed:10}},
-  {id:'LB-R1B', col:0, band:'low', name:'Lower R1 · B', a:{seed:8}, b:{seed:9}},
-  {id:'LB-R2A', col:1, band:'low', name:'Lower R2 · A', a:{seed:5}, b:{win:'LB-R1B'}},
-  {id:'LB-R2B', col:1, band:'low', name:'Lower R2 · B', a:{seed:6}, b:{win:'LB-R1A'}},
+  {id:'LB-R1A', col:0, band:'low', name:'Lower R1 · A', a:{seed:6}, b:{seed:11}},
+  {id:'LB-R1B', col:0, band:'low', name:'Lower R1 · B', a:{seed:7}, b:{seed:10}},
+  {id:'LB-R1C', col:0, band:'low', name:'Lower R1 · C', a:{seed:8}, b:{seed:9}},
+  {id:'LB-R2A', col:1, band:'low', name:'Lower R2 · A', a:{seed:5}, b:{win:'LB-R1C'}},
+  {id:'LB-R2B', col:1, band:'low', name:'Lower R2 · B', a:{win:'LB-R1A'}, b:{win:'LB-R1B'}},
   {id:'LB-R3A', col:2, band:'low', name:'Lower R3 · A', a:{lose:'UB-SF1'}, b:{win:'LB-R2B'}},
   {id:'LB-R3B', col:2, band:'low', name:'Lower R3 · B', a:{lose:'UB-SF2'}, b:{win:'LB-R2A'}},
   {id:'LB-SF',  col:3, band:'low', name:'Lower Semifinal', a:{win:'LB-R3A'}, b:{win:'LB-R3B'}},
@@ -698,7 +705,7 @@ function fates(){
   TEAMS.forEach(t=> f[t.id] = {status:'Masih bertahan', out:false, alive:true, rank:null});
   const gf = koResult('GF');
   const eliminatedIn = {
-    'LB-R1A':'tersingkir · Lower R1','LB-R1B':'tersingkir · Lower R1',
+    'LB-R1A':'tersingkir · Lower R1','LB-R1B':'tersingkir · Lower R1','LB-R1C':'tersingkir · Lower R1',
     'LB-R2A':'tersingkir · Lower R2','LB-R2B':'tersingkir · Lower R2',
     'LB-R3A':'tersingkir · Lower R3','LB-R3B':'tersingkir · Lower R3',
     'LB-SF':'tersingkir · Semifinal Lower','LB-F':'Peringkat 3'
@@ -780,7 +787,9 @@ function renderFixtures(){
     });
     if(!items.length) continue;
     const dn = md.filter(m=>played(state.group[m.id])).length;
-    html += `<div class="md"><div class="md-h"><span>Matchday ${md[0].md}</span><span class="rule"></span><span class="cnt">${dn}/${md.length}</span></div>`;
+    const byeId = BYES[md[0].md];
+    const byeTxt = byeId ? `<span class="cnt">Libur: ${esc(T[byeId].name)}</span>` : '';
+    html += `<div class="md"><div class="md-h"><span>Matchday ${md[0].md}</span><span class="rule"></span>${byeTxt}<span class="cnt">${dn}/${md.length}</span></div>`;
     for(const m of items){
       const r = state.group[m.id]||{};
       const p = played(r);
@@ -1010,7 +1019,7 @@ document.getElementById('btnReset').onclick = ()=>{
   save(); renderAll();
 };
 document.getElementById('btnRandom').onclick = ()=>{
-  if(!confirm('Isi 45 laga grup dengan skor acak? Hasil yang sudah ada akan tertimpa.')) return;
+  if(!confirm(`Isi ${GROUP_MATCHES.length} laga grup dengan skor acak? Hasil yang sudah ada akan tertimpa.`)) return;
   state.group = {};
   for(const m of GROUP_MATCHES){
     const p=[0,0,1,1,1,2,2,2,3,3,4,5];
